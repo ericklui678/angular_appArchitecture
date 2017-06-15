@@ -1,0 +1,4 @@
+<h3>NoteComponent</h3>
+{{ notes | json }}
+<!--Listening for myEvent from child-->
+<app-note-list [myNotes]='notes' (myEvent)='invoked($event)'></app-note-list>
